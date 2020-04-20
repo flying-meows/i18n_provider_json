@@ -6,6 +6,7 @@ import 'app_localizations.dart';
 import 'package:provider/provider.dart';
 
 void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
   AppLanguage appLanguage = AppLanguage();
   await appLanguage.fetchLocale();
   runApp(MyApp(
@@ -26,7 +27,7 @@ class MyApp extends StatelessWidget {
       builder: (_) => appLanguage,
       child: Consumer<AppLanguage>(builder: (context, model, child) {
         return MaterialApp(
-          //locale: model.appLocal,
+          locale: model.appLocal,
           supportedLocales: [
             Locale('en', 'US'),
             Locale('ar', ''),

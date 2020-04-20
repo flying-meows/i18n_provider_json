@@ -8,7 +8,15 @@ class AppLanguage extends ChangeNotifier {
 
   Locale get appLocal => _appLocale ?? Locale("en");
   fetchLocale() async {
-    var prefs = await SharedPreferences.getInstance();
+    var prefs = await SharedPreferences.getInstance(); 
+    /* Exception has occurred.
+FlutterError (ServicesBinding.defaultBinaryMessenger was accessed 
+before the binding was initialized.
+If you're running an application and need to access the binary messenger 
+before `runApp()` has been called (for example, during plugin initialization), 
+then you need to explicitly call the `WidgetsFlutterBinding.ensureInitialized()` first.
+If you're running a test, you can call the `TestWidgetsFlutterBinding.ensureInitialized()` 
+as the first line in your test's `main()` method to initialize the binding.) */
     if (prefs.getString('language_code') == null) {
       _appLocale = Locale('en');
       return Null;
