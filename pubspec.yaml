@@ -1,5 +1,5 @@
 name: i18n_provider_json
-description: A new Flutter project.
+description: A Flutter i18n project using Provider and JSON
 
 # The following line prevents the package from being accidentally published to
 # pub.dev using `pub publish`. This is preferred for private packages.
