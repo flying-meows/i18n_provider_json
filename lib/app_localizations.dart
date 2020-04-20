@@ -49,6 +49,8 @@ Flutter localization uses delegates for initialization.
 this is why we will create a delegate class to be able to use that class.
 */
 
+// LocalizationsDelegate is a factory for a set of localized resources
+// In this case, the localized strings will be gotten in an AppLocalizations object
 class _AppLocalizationsDelegate
     extends LocalizationsDelegate<AppLocalizations> {
   // This delegate instance will never change (it doesn't even have fields!)
