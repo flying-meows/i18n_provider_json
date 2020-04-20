@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ChangeNotifierProvider<AppLanguage>(
-      builder: (_) => appLanguage,
+      create: (_) => appLanguage,
       child: Consumer<AppLanguage>(builder: (context, model, child) {
         return MaterialApp(
           locale: model.appLocal,
@@ -56,14 +56,14 @@ class AppLang extends StatelessWidget {
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
-          crossAxisAlignment: CrossAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
             Text(
               AppLocalizations.of(context).translate('Message'),
               style: TextStyle(fontSize: 32),
             ),
             Row(
-              mainAxisAlignment: MainAxisAlignment.center,
+              mainAxisAlignment: MainAxisAlignment.start,
               children: <Widget>[
                 RaisedButton(
                   onPressed: () {
