@@ -17,6 +17,9 @@ To test AxisAlignment
 Flutter crossAxisAlignment vs mainAxisAlignment  
 https://stackoverflow.com/questions/53850149/flutter-crossaxisalignment-vs-mainaxisalignment  
 
+Xcode-How i can add other language on localization window  
+https://stackoverflow.com/questions/33340016/xcode-how-i-can-add-other-language-on-localization-window  
+
 ## How to run  
 `$flutter pub get`  
 `$flutter doctor`  
