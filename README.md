@@ -1,6 +1,19 @@
 # i18n_provider_json
 
-ENGLISH: <img src="img/en.png" alt="english" width="200"/>  ARABIC: <img src="img/ar.png" alt="arabic" width="200"/> 
+<table>
+  <tr>
+    <th> ENGLISH </th>
+    <th> ARABIC </th>
+  </tr>
+  <tr>
+    <td>
+      <img src="img/en.png" alt="english" width="200"/>
+    </td>
+    <td>
+      <img src="img/ar.png" alt="arabic" width="200"/> 
+    </td>
+  </tr>
+</table>
 
 Ref. Tutorial:  
 Flutter Internationalization the Easy Way — using Provider and JSON  
